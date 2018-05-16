@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>TRAVEL +LEISURE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        .w3-button {
+            border: none;
+            display: inline-block;
+            padding: 8px 50px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: left;
+            cursor: pointer;
+            white-space: nowrap;
+            width: 25%;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 60px;
+            color: #FDC400;
+        }
+
+        .b {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 10px;
+            color: white;
+        }
+
+        h1 {
+            position: absolute;
+            top: 18%;
+            left: 11%;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+        }
+
+        h5 {
+            position: absolute;
+           top: 35%;
+            left: 16%;
+            width: 100%;
+            color: #FDC400;
+            font-weight: bold;
+        }
+
+        .image {
+            position: relative;
+            width: 100%; /* for IE 6 */
+        }
+
+            .image .btn1 {
+                position: absolute;
+                top: 70%;
+                left: 27%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #08fd00ad;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+                .image .btn1:hover {
+                    background-color: #08fd00;
+                }
+
+            .image .btn {
+                position: absolute;
+                top: 70%;
+                left: 17%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #00a0fda6;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+                .image .btn:hover {
+                    background-color: #00a0fd;
+                }
+
+        .round_buttons_plane {
+            border-radius: 50%;
+            background: #00B4FD;
+            padding: 30px;
+            width: 150px;
+            height: 150px;
+            background-image: url('fonts/plane_b.PNG');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .round_buttons_dollar {
+            border-radius: 50%;
+            background: #00B4FD;
+            padding: 30px;
+            width: 150px;
+            height: 150px;
+            background-image: url('fonts/dollar_b.PNG');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .round_buttons_bed {
+            border-radius: 50%;
+            background: #00B4FD;
+            padding: 30px;
+            width: 150px;
+            height: 150px;
+            background-image: url('fonts/bed_b.PNG');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .round_buttons_car {
+            border-radius: 50%;
+            background: #00B4FD;
+            padding: 30px;
+            width: 150px;
+            height: 150px;
+            background-image: url('fonts/car_b.PNG');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .hr {
+            color: #808B96;
+            background-color: #808B96;
+            height: 1px;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .vl {
+            border-left: 2px solid #808B96;
+            height: 100px;
+        }
+
+        footer .more {
+            display: none !important;
+        }
+
+        .header .logo {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="image" style="position: absolute;width:100%;">
+        <iframe src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&noforecast=1&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image" frameborder="0" scrolling="NO" allowtransparency="true" style="border-radius: 20%;position: absolute;margin-top: 14%;margin-left: 70%;width: 20%;height: 15%;float: right;"></iframe>
+        <div>
+            <div class="w3-center" style="background-color:black; line-height: 1; font-size: 40px; font-family: Verdana,sans-serif;">
+                <div style="margin-right:58%;">
+                    <img src="fonts/Logo_Img.jpg" />
+
+                </div>
+
+                <div class="w3-center" style="z-index: 1;">
+
+                </div>
+
+            </div>
+
+
+            <h1>YOUR DREAM HOLIDAY<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWAITS</h1>
+            <h5>BOOK THE HOLIDAY OF A<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIFTIME NOW!</h5>
+
+
+
+        </div>
+
+        <div>
+
+        </div>
+        <div style="position:absolute; top: 50%; left: 0; width: 100%;">
+
+            <button class="btn" onclick="openWinBook()">BOOK NOW</button>
+            <button class="btn1" onclick="openWinMore()">MORE INFO</button>
+        </div>
+
+        <img class="mySlides" src="fonts/background_1.jpg" style="width:100%">
+        <img class="mySlides" src="fonts/background_2.jpg" style="width:100%">
+        <img class="mySlides" src="fonts/background_3.jpg" style="width:100%">
+
+
+        <div class="w3-center" style="background-color:black; line-height: 2; font-size: 40px; font-family: Verdana,sans-serif;">
+            <button class="w3-button" onclick="currentDiv(1)">1&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: absolute;">Book your flights<i style="font-size:140px; position: absolute; margin-top: -30%; left: 170%;" class="fa fa-angle-right"></i></b></button>
+            <button class="w3-button" onclick="currentDiv(2)">2&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: absolute;">Book your destination<i style="font-size: 140px; position: absolute;     margin-top: -25%;left: 130%;" class="fa fa-angle-right"></i></b></button>
+            <button class="w3-button" onclick="currentDiv(3)">3&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: absolute;">Book car hire</b></button>
+
+        </div>
+
+        <div class="w3-center" style="background-color:black; line-height: 2; font-size: 40px; font-family: Verdana,sans-serif;">
+            <div class="hr"></div>
+            <b style="font-size:20px;  color:#FDC400; margin-top:2%; margin-left:3%; position: initial;">Cheapest Flights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Great Prices&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazing accommodation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Car hire at greate price</b>&nbsp;&nbsp;
+        </div>
+
+
+        <div class="w3-center" style="background-color:black; line-height: 3; font-size: 40px; font-family: Verdana,sans-serif;">
+           
+            <div>
+                <button class="round_buttons_plane" onclick="openWinplane()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="round_buttons_dollar" onclick="openWindollar()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="round_buttons_bed" onclick="openWinbed()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="round_buttons_car" onclick="openWincar()"></button>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-red", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-red";
+            }
+
+            function openWinplane() {
+                window.open("https://www.travelstart.co.za/lp/book-cheap-flights?gclid=CjwKCAjwiurXBRAnEiwAk2GFZqNAJ31x_lHA_a0PnXABnsO6hiIkPnP8dMs6T5zi24EtgocdMvyJVxoCEykQAvD_BwE&gclsrc=aw.ds&dclid=CM759e6piNsCFScj0wod0isPfg");
+            }
+
+            function openWindollar() {
+                window.open("");
+            }
+
+            function openWinbed() {
+                window.open("https://www.trivago.co.za/?iSemThemeId=27162&iPathId=147&sem_keyword=book%20cheap%20accommodation&sem_creativeid=190911864469&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=1t1&sem_param1=&sem_param2=&sem_campaignid=193705020&sem_adgroupid=14513754060&sem_targetid=kwd-911818116&sem_location=1028645&cip=27126430201&gclid=CjwKCAjwiurXBRAnEiwAk2GFZkxkfjndwQmjxqHLogf72RvZ3WgV2Tuyd5vS_XJ5-32_aQvR522KYBoCMtIQAvD_BwE");
+            }
+
+            function openWincar() {
+                window.open("https://www.google.co.za/search?rlz=1C1CHBF_enZA771ZA771&ei=XCT7WpjEI8-VgQbE8Zcw&q=book+cheapest+car+rental&oq=book+cheapest+car&gs_l=psy-ab.1.0.0j0i22i30k1l2j0i22i10i30k1.6423.6951.0.9050.3.3.0.0.0.0.259.503.2-2.2.0.foo%2Ccfro%3D1%2Ckpnss%3D0...0...1.1.64.psy-ab..1.2.502....0.8k-eOnppAnE");
+            }
+
+            function openWinBook() {
+                window.open("http://www.travelandleisure.com/travel-planning");
+            }
+
+            function openWinMore() {
+                window.open("http://www.travelandleisure.com/travel-tips");
+            }
+
+            function openWinTravel() {
+                window.open("http://www.travelandleisure.com/");
+            }
+    </script>
+
+</body>
+
+</html>
