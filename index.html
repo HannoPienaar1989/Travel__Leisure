@@ -27,7 +27,7 @@
             width: 25%;
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
-            font-size: 60px;
+            font-size: 100px;
             color: #FDC400;
         }
 
@@ -39,8 +39,8 @@
         }
 
         h1 {
-            position: absolute;
-            top: 18%;
+               position: absolute;
+    margin-top: 4%;
             left: 11%;
             width: 100%;
             color: white;
@@ -49,7 +49,7 @@
 
         h5 {
             position: absolute;
-           top: 30%;
+                margin-top: 10%;
             left: 15%;
             width: 100%;
             color: #FDC400;
@@ -171,6 +171,80 @@
         .header .logo {
             display: none !important;
         }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+html, body{background : #FBC02D; font-family : Roboto; height: 100%; width: 100%; margin: 0;}
+
+#holder{
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: #ffffff45;
+  padding: 10px;
+  width: 20%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+  border-radius: 2px;
+  margin-left: 11%;
+}
+.button_Book {
+  background: #1baaec;
+  margin : 20px auto;
+      width: 50%;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+
+.button_More {
+  background: #4cc719;
+  margin : 20px auto;
+    width: 50%;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background : #26A69A;
+  left : -250px;
+  transition : .3s;
+}
+ button_More .btnText {
+  color : white;
+  transition : .3s;
+}
+.btnText2 {
+  margin-top : 63px;
+  margin-right : -130px;
+  color : #FFF;
+}
+.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+}
+.button:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.button:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+
+
     </style>
 </head>
 <body>
@@ -189,10 +263,17 @@
 
             </div>
 
+            <div style="position:relative;">
+                <h1>YOUR DREAM HOLIDAY<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWAITS</h1>
+         
+                <h5>BOOK THE HOLIDAY OF A<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIFTIME NOW!</h5>
+            </div>
+        
+            <div style="position:relative;">
+              
+             
 
-            <h1>YOUR DREAM HOLIDAY<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWAITS</h1>
-            <h5>BOOK THE HOLIDAY OF A<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIFTIME NOW!</h5>
-
+            </div>
 
 
         </div>
@@ -202,8 +283,27 @@
         </div>
         <div style="position:absolute; top: 50%; left: 0; width: 100%;">
 
-            <button class="btn" onclick="openWinBook()">BOOK NOW</button>
-            <button class="btn1" onclick="openWinMore()">MORE INFO</button>
+            <!--<button class="btn" onclick="openWinBook()">BOOK NOW</button>
+            <button class="btn1" onclick="openWinMore()">MORE INFO</button>-->
+            <div id="holder">
+
+                <div onclick="openWinBook()" class="button_Book">
+                    <p class="btnText">BOOK NOW</p>
+                    <div class="btnTwo">
+                        <p class="btnText2">GO!</p>
+                    </div>
+                </div>
+
+                <div onclick="openWinMore()" class="button_More">
+                    <p class="btnText">MORE INFO</p>
+                    <div class="btnTwo">
+                        <p class="btnText2">GO!</p>
+                    </div>
+                </div>
+
+            </div>
+
+       
         </div>
 
         <img class="mySlides" src="fonts/Background_1.png" style="width:100%">
@@ -211,10 +311,10 @@
         <img class="mySlides" src="fonts/Background_3.png" style="width:100%">
 
 
-        <div class="w3-center" style="background-color:black; line-height: 2; font-size: 40px; font-family: Verdana,sans-serif;">
-            <button class="w3-button" onclick="currentDiv(1)">1&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:9%; position: absolute;">Book your flights<i style="font-size:140px; position: absolute; margin-top: -30%; left: 170%;" class="fa fa-angle-right"></i></b></button>
-            <button class="w3-button" onclick="currentDiv(2)">2&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:11%; position: absolute;">Book your destination<i style="font-size: 140px; position: absolute;     margin-top: -25%;left: 135%;" class="fa fa-angle-right"></i></b></button>
-            <button class="w3-button" onclick="currentDiv(3)">3&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: absolute;">Book car hire</b></button>
+        <div class="w3-center" style="background-color:black; line-height: 1; font-size: 40px; font-family: Verdana,sans-serif;">
+            <button class="w3-button" onclick="currentDiv(1)">1&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:9%; position: relative;">Book your flights<i style="font-size:120px;   margin-left: 30%;" class="fa fa-angle-right"></i></b></button>
+            <button class="w3-button" onclick="currentDiv(2)">2&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:11%; position: relative;">Book your destination<i style="font-size: 120px;margin-left: 20%;" class="fa fa-angle-right"></i></b></button>
+            <button class="w3-button" onclick="currentDiv(3)">3&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: relative;">Book car hire<i style="font-size: 120px;margin-left: 25%;" class="fa fa-angle-right"></i></b></button>
 
         </div>
 
@@ -225,29 +325,27 @@
 
 
         <div class="w3-center" style="background-color:black; line-height: 3; font-size: 40px; width:100%; font-family: Verdana,sans-serif;">
-           
+
             <div>
                 <button class="round_buttons_plane" onclick="openWinplane()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="round_buttons_dollar" onclick="openWindollar()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="round_buttons_bed" onclick="openWinbed()"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="round_buttons_car" onclick="openWincar()"></button>
             </div>
-           
+
         </div>
     </div>
     <script>
 
+
             var slideIndex = 1;
             showDivs(slideIndex);
-
             function plusDivs(n) {
                 showDivs(slideIndex += n);
             }
-
             function currentDiv(n) {
                 showDivs(slideIndex = n);
             }
-
             function showDivs(n) {
                 var i;
                 var x = document.getElementsByClassName("mySlides");
@@ -263,31 +361,24 @@
                 x[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " w3-red";
             }
-
             function openWinplane() {
                 window.open("https://www.travelstart.co.za/lp/book-cheap-flights?gclid=CjwKCAjwiurXBRAnEiwAk2GFZqNAJ31x_lHA_a0PnXABnsO6hiIkPnP8dMs6T5zi24EtgocdMvyJVxoCEykQAvD_BwE&gclsrc=aw.ds&dclid=CM759e6piNsCFScj0wod0isPfg");
             }
-
             function openWindollar() {
                 window.open("");
             }
-
             function openWinbed() {
                 window.open("https://www.trivago.co.za/?iSemThemeId=27162&iPathId=147&sem_keyword=book%20cheap%20accommodation&sem_creativeid=190911864469&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=1t1&sem_param1=&sem_param2=&sem_campaignid=193705020&sem_adgroupid=14513754060&sem_targetid=kwd-911818116&sem_location=1028645&cip=27126430201&gclid=CjwKCAjwiurXBRAnEiwAk2GFZkxkfjndwQmjxqHLogf72RvZ3WgV2Tuyd5vS_XJ5-32_aQvR522KYBoCMtIQAvD_BwE");
             }
-
             function openWincar() {
                 window.open("https://www.google.co.za/search?rlz=1C1CHBF_enZA771ZA771&ei=XCT7WpjEI8-VgQbE8Zcw&q=book+cheapest+car+rental&oq=book+cheapest+car&gs_l=psy-ab.1.0.0j0i22i30k1l2j0i22i10i30k1.6423.6951.0.9050.3.3.0.0.0.0.259.503.2-2.2.0.foo%2Ccfro%3D1%2Ckpnss%3D0...0...1.1.64.psy-ab..1.2.502....0.8k-eOnppAnE");
             }
-
             function openWinBook() {
                 window.open("http://www.travelandleisure.com/travel-planning");
             }
-
             function openWinMore() {
                 window.open("http://www.travelandleisure.com/travel-tips");
             }
-
             function openWinTravel() {
                 window.open("http://www.travelandleisure.com/");
             }
