@@ -225,26 +225,35 @@ html, body{background : #FBC02D; font-family : Roboto; height: 100%; width: 100%
   left : -250px;
   transition : .3s;
 }
- button_More .btnText {
+ .btnText {
   color : white;
   transition : .3s;
+  font-weight: bold;
 }
-.btnText2 {
+ .btnText2 {
   margin-top : 63px;
   margin-right : -130px;
   color : #FFF;
 }
-.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+.button_More:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
   left: -130px;
 }
-.button:hover .btnText{ /*When hovering over .button change .btnText*/
+.button_More:hover .btnText{ /*When hovering over .button change .btnText*/
   margin-left : 65px;
 }
-.button:active { /*Clicked and held*/
+.button_Book:active { /*Clicked and held*/
   box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
 }
 
-
+.button_Book:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+}
+.button_Book:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.button_Book:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
     </style>
 </head>
 <body>
@@ -312,7 +321,7 @@ html, body{background : #FBC02D; font-family : Roboto; height: 100%; width: 100%
 
 
         <div class="w3-center" style="background-color:black; line-height: 1; font-size: 40px; font-family: Verdana,sans-serif;">
-            <button class="w3-button" onclick="currentDiv(1)">1&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:9%; position: relative;">Book your flights<i style="font-size:120px;   margin-left: 30%;" class="fa fa-angle-right"></i></b></button>
+            <button class="w3-button" onclick="currentDiv(1)">1&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:9%; position: relative;">Book your flights<i style="font-size:120px;   margin-left: 30%;" class="fal-angle-right"></i></b></button>
             <button class="w3-button" onclick="currentDiv(2)">2&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; width:11%; position: relative;">Book your destination<i style="font-size: 120px;margin-left: 20%;" class="fa fa-angle-right"></i></b></button>
             <button class="w3-button" onclick="currentDiv(3)">3&nbsp;<b style="font-size: 20px;  color: white; margin-top: 2%; position: relative;">Book car hire<i style="font-size: 120px;margin-left: 25%;" class="fa fa-angle-right"></i></b></button>
 
